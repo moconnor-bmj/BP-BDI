@@ -1,0 +1,98 @@
+.row {width: 100% !important; max-width: 100% !important; } 
+.col-md-2 {width: 16.66667% !important; max-width: 16.66667% !important; } 
+.col-md-4 { width: 33.33333% !important; max-width: 33.33333% !important; } 
+.col-md-5 { width: 41.66667% !important;  max-width: 41.66667% !important; }
+.col-md-6 { width: auto !important; max-width: none !important; } /* required legacy code */
+.card-block > .row > .col-md-6 {max-width: 50% !important; }
+.col-md-7 { width: 58.33333% !important; max-width: 58.33333% !important; }
+.col-md-8 { width: 66.66667% !important; max-width: 66.66667% !important; } 
+.col-md-9 {width: 75% !important; max-width: 75% !important; } 
+.col-md-10 {width: 83.33333% !important; max-width: 83.33333% !important; }
+.col-md-11 {width: 91.66667% !important; } 
+.col-md-12 { width: 100% !important; }
+@media all and (min-width: 768px) {
+    .col-md-6 {width: auto !important; max-width: none !important; }
+} 
+
+.regMessaging {margin-top: 16px !important;} 
+.modal-registration-form .regMessaging .list-group-item, 
+.registration-form .regMessaging .list-group-item, 
+.modal-registration-success .regMessaging .list-group-item, 
+.login-form .regMessaging .list-group-item {list-style-type: none !important; } 
+.custom-control.custom-checkbox.float-right.mr-0 {padding-top:10px !important;}
+.modal-registration-form .modal-content {padding-bottom: 4rem !important;}
+
+body.home #mainNav #mainNavbarNav ul li.nav-item {width: auto !important; }
+body.home main.container .row div[class*='col-'] {float: left; }
+body.home #panels-x3 .panel {min-height: 460px; }
+body.home #panels-x2 .panel {min-height: 274px; }
+body.home #access .col-md-6 {float: left; }
+body.home #access .row {width: 50% !important; margin: 0 auto; }
+
+#header #globalNav .container {height: 2rem; padding-top: 0.5rem; }
+#header #globalNav #navbarNav {display: block !important; }/*the same as the .collapse element */
+#header #mainSearch .col-lg-5 {float: right; padding-right: 0; }
+
+#footer .col-md-9, 
+#footer .col-md-4, 
+#footer .col-md-3 {float: left; }
+
+.calculators .search-only .form-control {width: 476px;}
+.calculators .nav-item {display: table-cell;}
+.calculators .input-group-btn {display:none;}
+.specialties .nav-item {display: table-cell;}
+
+.specialties-list ul.specialty-list {display: inline-table !important; }
+.specialties-list ul.specialty-list li {display: table-cell !important; float: left !important; clear: right !important; width: 33% !important; min-width: 200px !important; }
+.specialties-list ul.specialty-list li:nth-last-child(3) {display: none !important;}
+
+/* clearfix starts */
+.home .card-block:before, 
+.container .row .panel:before, 
+.home .card-block:after, 
+.container .row .panel:after, 
+#footer:before, 
+#footer:after {content: '.'; display:table; height: 0; font-size: 0; line-height: 0; visibility: hidden; }
+
+.home .card-block:after, 
+.container .row .panel:after, 
+#footer:after {clear: both; }
+/* clearfix ends */
+
+
+
+/*target ie9 only. more fixes since .figures redesign which effect page flow */
+/*@media screen and (min-width:0) and (min-resolution:.001dpcm) {*/
+    .details .show-content .rowDetails { background:white; } 
+    .serp_detail ul li {list-style: none; }
+    .topic .rowDetails .conTitle, 
+    .topic > .row > .col-md-8 {float: left; }
+    .topic .rowDetails .conTitle + div, 
+    .topic > .row > .col-md-4 {float: right; }
+    .tmp-static-list div:before, 
+    .tmp-static-list div:after, 
+    .tmp-basic > .card:before, 
+    .tmp-basic > .card:after, 
+    .topic > .row .card:before, 
+    .topic > .row .card:after {content: '.'; display: table; height: 0; font-size: 0; line-height: 0; visibility: hidden; } 
+    .tmp-static-list div:after, 
+    .tmp-basic > .card:after, 
+    .topic > .row .card:after {clear: both; }
+    .nav-tabs .nav-item, 
+    .tmp-basic .disclaimer, 
+    .topic > .row:last-child, 
+    .topic .rowDetails {float: left; } 
+    
+    #access .row > div:first-child {float: left; }
+
+    .tmp-static-list .rowHead, 
+    .tmp-static-list .rowCondition {min-height: 2rem; }
+    .tmp-static-list .rowHead > div, 
+    .tmp-static-list .rowDetails > div {float: left; clear: right; }
+
+    .treatment-table > .card {position: static !important; }
+    .treatment-table .container > .panel {background: white !important; }
+    .treatment-table .disclaimer {float: left; }
+
+    #dates .allUpdates > div {float: left; }
+/*}*/
